@@ -13,6 +13,13 @@
 		DAD67E521AF7963200616BF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD67E511AF7963200616BF6 /* Images.xcassets */; };
 		DAD67E551AF7963200616BF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD67E531AF7963200616BF6 /* LaunchScreen.xib */; };
 		DAD67E611AF7963200616BF6 /* ZipExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD67E601AF7963200616BF6 /* ZipExampleTests.swift */; };
+		DAD67E771AF79F7B00616BF6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DAD67E6D1AF79F7B00616BF6 /* ioapi.c */; };
+		DAD67E781AF79F7B00616BF6 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DAD67E6F1AF79F7B00616BF6 /* mztools.c */; };
+		DAD67E791AF79F7B00616BF6 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DAD67E711AF79F7B00616BF6 /* unzip.c */; };
+		DAD67E7A1AF79F7B00616BF6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DAD67E731AF79F7B00616BF6 /* zip.c */; };
+		DAD67E7B1AF79F7B00616BF6 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = DAD67E761AF79F7B00616BF6 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DAD67E7D1AF79F9500616BF6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD67E7C1AF79F9500616BF6 /* libz.dylib */; };
+		DAD67E861AF7A1E300616BF6 /* Archive.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAD67E851AF7A1E300616BF6 /* Archive.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,20 @@
 		DAD67E5A1AF7963200616BF6 /* ZipExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD67E5F1AF7963200616BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD67E601AF7963200616BF6 /* ZipExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipExampleTests.swift; sourceTree = "<group>"; };
+		DAD67E6C1AF79F7B00616BF6 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		DAD67E6D1AF79F7B00616BF6 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		DAD67E6E1AF79F7B00616BF6 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		DAD67E6F1AF79F7B00616BF6 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		DAD67E701AF79F7B00616BF6 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		DAD67E711AF79F7B00616BF6 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		DAD67E721AF79F7B00616BF6 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		DAD67E731AF79F7B00616BF6 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		DAD67E741AF79F7B00616BF6 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		DAD67E751AF79F7B00616BF6 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		DAD67E761AF79F7B00616BF6 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		DAD67E7C1AF79F9500616BF6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DAD67E841AF7A10500616BF6 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Header.h; path = ../Header.h; sourceTree = "<group>"; };
+		DAD67E851AF7A1E300616BF6 /* Archive.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Archive.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD67E7D1AF79F9500616BF6 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +81,9 @@
 		DAD67E3C1AF7963200616BF6 = {
 			isa = PBXGroup;
 			children = (
+				DAD67E851AF7A1E300616BF6 /* Archive.zip */,
+				DAD67E7C1AF79F9500616BF6 /* libz.dylib */,
+				DAD67E6A1AF79F7B00616BF6 /* ZipArchive */,
 				DAD67E471AF7963200616BF6 /* ZipExample */,
 				DAD67E5D1AF7963200616BF6 /* ZipExampleTests */,
 				DAD67E461AF7963200616BF6 /* Products */,
@@ -77,6 +102,7 @@
 		DAD67E471AF7963200616BF6 /* ZipExample */ = {
 			isa = PBXGroup;
 			children = (
+				DAD67E841AF7A10500616BF6 /* Header.h */,
 				DAD67E4A1AF7963200616BF6 /* AppDelegate.swift */,
 				DAD67E4C1AF7963200616BF6 /* ViewController.swift */,
 				DAD67E4E1AF7963200616BF6 /* Main.storyboard */,
@@ -110,6 +136,32 @@
 				DAD67E5F1AF7963200616BF6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD67E6A1AF79F7B00616BF6 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				DAD67E6B1AF79F7B00616BF6 /* minizip */,
+				DAD67E751AF79F7B00616BF6 /* ZipArchive.h */,
+				DAD67E761AF79F7B00616BF6 /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		DAD67E6B1AF79F7B00616BF6 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				DAD67E6C1AF79F7B00616BF6 /* crypt.h */,
+				DAD67E6D1AF79F7B00616BF6 /* ioapi.c */,
+				DAD67E6E1AF79F7B00616BF6 /* ioapi.h */,
+				DAD67E6F1AF79F7B00616BF6 /* mztools.c */,
+				DAD67E701AF79F7B00616BF6 /* mztools.h */,
+				DAD67E711AF79F7B00616BF6 /* unzip.c */,
+				DAD67E721AF79F7B00616BF6 /* unzip.h */,
+				DAD67E731AF79F7B00616BF6 /* zip.c */,
+				DAD67E741AF79F7B00616BF6 /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +246,7 @@
 			files = (
 				DAD67E501AF7963200616BF6 /* Main.storyboard in Resources */,
 				DAD67E551AF7963200616BF6 /* LaunchScreen.xib in Resources */,
+				DAD67E861AF7A1E300616BF6 /* Archive.zip in Resources */,
 				DAD67E521AF7963200616BF6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD67E771AF79F7B00616BF6 /* ioapi.c in Sources */,
+				DAD67E791AF79F7B00616BF6 /* unzip.c in Sources */,
+				DAD67E7B1AF79F7B00616BF6 /* ZipArchive.mm in Sources */,
 				DAD67E4D1AF7963200616BF6 /* ViewController.swift in Sources */,
+				DAD67E7A1AF79F7B00616BF6 /* zip.c in Sources */,
+				DAD67E781AF79F7B00616BF6 /* mztools.c in Sources */,
 				DAD67E4B1AF7963200616BF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +397,7 @@
 				INFOPLIST_FILE = ZipExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 			};
 			name = Debug;
 		};
@@ -349,6 +408,7 @@
 				INFOPLIST_FILE = ZipExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 			};
 			name = Release;
 		};
